@@ -1,0 +1,31 @@
+https://www.youtube.com/watch?v=iHb3nFtzFoc
+
+PRIVATE KEY = use for decreption & utilized to signed the message.
+PUBLIC KEY  = use for encryption & utilized to verify if the signatory is valid.
+
+1. https://gnuwin32.sourceforge.net/packages/openssl.htm
+
+2.Download Binary ZIP
+
+3.After download extract
+
+4.Go to bin path and type cmd in path to show cmd
+
+5.Type "openssl" and will show promt OpenSSL>
+
+6.Type help will show available to use
+
+7.Generate PrivateKey: Type "genrsa -out mykeyFileToGenerate.pem 1024"
+   -out = output
+   .pem = fileType
+    1024 = size of bytes
+
+8.Open generated file to get the privatekey "mykeyFileToGenerate.pem"
+
+9.Generate PublicKey: Type "rsa -in mykeyFileToGenerate.pem -pubout -out myPublicKeyGeneratedFile.pem"
+ -in = input
+ -out = output
+-pubout -out = to generate a file for public key
+ state the private key file to genereate the publickey "mykeyFileToGenerate.pem"
+
+Asymmetric Encryption & Decryption
